@@ -1,0 +1,15 @@
+<% if (!changeTitle) { %>
+  <h3><%= post.escape("title") %></h3>
+<% } else { %>
+  <input type="text" name="post[title]" value="<%= post.escape('title') %>"><br>
+<% } %>
+
+<% if (!changeBody) { %>
+  <p><%= post.escape("body") %></p>
+<% } else { %>
+  <textarea name="post[body]"><%= post.escape("body") %></textarea><br>
+<% } %>
+
+
+
+<a href="javascript:void(0)" class="all-posts">Back to all posts</a>
