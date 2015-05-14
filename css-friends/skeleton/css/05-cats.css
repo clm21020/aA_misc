@@ -1,0 +1,11 @@
+/* PHASE 5: Cats */
+.content-header {
+  background-image: url("file:../../shared/img/cats.jpg");
+  margin: 0 auto;
+  height: 200px;
+  width: 900px;
+  background-color: #f50;
+  border-left: 1px solid #aaa;
+  border-right: 1px solid #aaa;
+  background-size: cover;
+}

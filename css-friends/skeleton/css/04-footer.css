@@ -1,0 +1,39 @@
+/* PHASE 4: Footer */
+.footer{
+  margin: 0 auto;
+  border: 1px solid #aaa;
+  border-top: none;
+  width: 900px;
+  height: 40px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  background-color: #fff;
+  position: relative;
+}
+
+.footer-info{
+  padding: 11px;
+  color: #aaa;
+  float: left;
+}
+
+.footer-links{
+  float: right;
+  margin: 0px;
+}
+
+.footer-links > li{
+  float: left;
+  padding: 11px;
+}
+
+.footer-links a{
+  display: block;
+  color: #aaa;
+  text-decoration: none;
+}
+
+
+.footer-links a:hover{
+  color: #000;
+}

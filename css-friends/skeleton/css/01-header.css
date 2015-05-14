@@ -1,0 +1,60 @@
+/* PHASE 1: Header */
+/*Type
+
+Font Family: Roboto
+Font Weights: 300, 400, 700
+Font Sizes: 36px, 24px, 16px, 14px, 12px*/
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  margin: 0px;
+  background: #eee;
+}
+
+.header{
+  position: relative;
+  z-index: 1;
+  background-color: #f00;
+  border: 1px solid #aaa;
+  height: 41px;
+  color: #fff;
+}
+
+.header-nav{
+  margin: 0 auto;
+  width: 900px;
+  height: inherit;
+}
+
+.header-logo{
+  font: inherit;
+  font-weight: 700;
+  margin: 0;
+  float: left;
+  border-right: 1px solid #aaa;;
+  border-left: 1px solid #aaa;
+}
+
+.header-list{
+  margin: 0;
+  float: right;
+  border-right: 1px solid #aaa;
+}
+
+.header a{
+  font: inherit;
+  display: block;
+  padding: 11px 20px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.header a:hover{
+  background-color: #000;
+}
+
+.header-list > li {
+  float: left;
+  border-left: 1px solid #aaa;
+}
