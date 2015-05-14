@@ -1,0 +1,9 @@
+<h1><%= @cat.name %></h1>
+<table>
+    <% @cat.attributes.each do |attr_name, attr_val| %>
+    <tr>
+    <th><%= attr_name %></th>
+    <td> <%= attr_val %></td> 
+    </tr>
+    <% end %>
+</table>

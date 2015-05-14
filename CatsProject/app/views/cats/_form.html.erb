@@ -1,0 +1,37 @@
+<h1> <%= verb %> a cat!</h1>
+<form action="/cats/<%= cat[:id] %>" method="post">
+
+  <% if cat.persisted? %>
+    <input type="hidden" name="_method" value="PATCH">
+  <% end %>
+
+  <div><label>Name
+    <input type="text" name="cat[name]" value=<%= cat[:name] %>>
+  </label></div>
+
+  <div><label>Color
+    <select name="cat[color]" id="cat_color">
+      <option <%= 'selected' unless cat.persisted? %> value="">Choose a Color</option>
+      <% %w(black brown gray white orange).each do |color| %>
+        <option <%= 'selected' if (cat[:color] == color) %> value=<%= color %>><%= color %></option>
+      <% end %>
+    </select>
+  </label></div>
+
+  <div><label>Female
+    <input type="radio" <%= 'checked' if (cat[:sex] == "F") %> name="cat[sex]" value="F">
+  </label></div>
+
+  <div><label>Male
+    <input type="radio" <%= 'checked' if (cat[:sex] == "M") %> name="cat[sex]" value="M">
+  </label></div>
+
+  <div><label>Birthday
+    <input type="date" name="cat[birth_date]" value=<%= cat[:birth_date] %>>
+  </label></div>
+
+  <div><label>Description
+    <textarea name="cat[description]"><%= cat[:description] %></textarea>
+  </label></div>
+  <input type="submit" value="<%= verb %> Cat">
+</form>
